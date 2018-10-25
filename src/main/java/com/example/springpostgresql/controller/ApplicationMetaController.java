@@ -1,5 +1,7 @@
 package com.example.springpostgresql.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,11 +24,11 @@ public class ApplicationMetaController {
 		return ResponseEntity.ok().body(applicationMeta);
 	}
 
-//	@GetMapping(value = "/apps")
-//	public ResponseEntity<List<ApplicationMeta>> apps() {
-//
-//		List<ApplicationMeta> applicationMetaList = applicationMetaRepository.findAll();
-//		return ResponseEntity.ok(applicationMetaList);
-//	}
+	@GetMapping(value = "/apps")
+	public ResponseEntity<List<ApplicationMeta>> apps() {
+
+		List<ApplicationMeta> applicationMetaList = applicationMetaRepository.findAll();
+		return ResponseEntity.ok(applicationMetaList);
+	}
 
 }

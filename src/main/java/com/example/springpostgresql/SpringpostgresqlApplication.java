@@ -25,10 +25,10 @@ public class SpringpostgresqlApplication implements CommandLineRunner {
 		applicationMeta.setDescription("This is a completely new application");
 		applicationMetaRepository.save(applicationMeta);
 
-//		ApplicationMeta applicationMeta1 = new ApplicationMeta();
-//		applicationMeta1.setName("CoolApp");
-//		applicationMeta1.setDescription("This is cool application!");
-//		applicationMetaRepository.save(applicationMeta1);
+		ApplicationMeta applicationMeta1 = new ApplicationMeta();
+		applicationMeta1.setName("CoolApp");
+		applicationMeta1.setDescription("This is cool application!");
+		applicationMetaRepository.save(applicationMeta1);
 		
 	}
 }

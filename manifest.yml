@@ -5,3 +5,6 @@ applications:
   memory: 1G
   services:
   - mypostgresql
+  env: 
+    spring_jpa_hibernate_ddl-auto: update
+    
